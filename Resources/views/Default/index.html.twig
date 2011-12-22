@@ -1,0 +1,19 @@
+{% extends 'kurtfunaiWalkthroughBundle::layout.html.twig' %}
+
+{% block title %}
+{{ parent() }}
+{% endblock %}
+
+{% block content_header %}
+<h1>walkthroughs - kurtfunai.com</h1>
+{% endblock %}
+
+{% block content %}
+<p>Select a walkthrough to see it in action!</p>
+<ul>
+    <li>
+        <a href="{{path('walkthrough_entities_and_forms')}}">Entities &amp; Forms</a>
+    </li>
+</ul>
+{% endblock %}
+

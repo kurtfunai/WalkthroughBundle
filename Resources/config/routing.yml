@@ -1,0 +1,7 @@
+homepage:
+    pattern:  /
+    defaults: { _controller: kurtfunaiWalkthroughBundle:Default:index }
+
+walkthrough_entities_and_forms:
+    pattern:  /entities-and-forms
+    defaults: { _controller: kurtfunaiWalkthroughBundle:Walkthrough:index }

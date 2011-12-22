@@ -1,0 +1,7 @@
+parameters:
+#    kurtfunai_walkthrough.example.class: kurtfunai\WalkthroughBundle\Example
+
+services:
+#    kurtfunai_walkthrough.example:
+#        class: %kurtfunai_walkthrough.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
