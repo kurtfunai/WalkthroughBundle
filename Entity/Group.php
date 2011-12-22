@@ -33,7 +33,9 @@ class Group {
      */
     protected $members;
 
-    // Initiate Doctrine Collection
+    /**
+     * Creates a Doctrine Collection for members.
+     */
     public function __construct()
     {
         $this->members = new \Doctrine\Common\Collections\ArrayCollection();

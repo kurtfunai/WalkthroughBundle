@@ -23,7 +23,7 @@ Add User: Entities and Forms Tutorial - {{ parent() }}
     {{ form_label(form.lastName, '*Last Name:') }}
     {{ form_widget(form.lastName) }}
 
-    {{ form_label(form.middleName, 'Mid. Name:') }}
+    {{ form_label(form.middleName, 'Middle Name:') }}
     {{ form_widget(form.middleName) }}
 
     {{ form_label(form.group, '*Group:') }}
@@ -40,7 +40,7 @@ Add User: Entities and Forms Tutorial - {{ parent() }}
 {% block footer %}
 <ul>
     <li>
-        <a href="{{path('walkthrough_entities_and_forms')}}">Back to walkthrough</a>
+        <a href="{{path('walkthrough_entities_and_forms')}}"><- Back</a>
     </li>
 </ul>
 {% endblock %}

@@ -13,7 +13,6 @@ class AddUser extends AbstractType
 {
     /**
      * Builds the AddUser form
-     *
      * @param  \Symfony\Component\Form\FormBuilder $builder
      * @param  array $options
      * @return void
@@ -28,9 +27,7 @@ class AddUser extends AbstractType
 
     /**
      * Returns the default options for this type.
-     *
      * @param array $options
-     *
      * @return array The default options
      */
     public function getDefaultOptions(array $options)
@@ -42,7 +39,6 @@ class AddUser extends AbstractType
 
     /**
      * Gets the unique name of this form type
-     *
      * @return string
      */
     public function getName()
