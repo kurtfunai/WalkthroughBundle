@@ -10,6 +10,7 @@ body
     font-size:        14px;
     font-family:      "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
     color:            #313131;
+    padding: 30px;
 }
 
 a
@@ -111,12 +112,12 @@ ul li
     clear:both;
 }
 
-.createGimmeListForm {
-    width: 300px;
+.AddUserForm {
+    width: 350px;
 }
 
-.createGimmeListForm label {
-    width: 80px;
+.AddUserForm label {
+    width: 120px;
     display:inline-block;
     text-align: right;
     margin: 0 10px 20px 0;

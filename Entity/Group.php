@@ -4,7 +4,7 @@
  * Date: 11-12-22
  */
 
-namespace Your\SiteBundle\Entity;
+namespace kurtfunai\WalkthroughBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -28,14 +28,24 @@ class Group {
     protected $name;
 
     /**
-     * @ORM\OneToMany(targetEntity="Your\SiteBundle\Entity\User", mappedBy="group")
+     * @ORM\OneToMany(targetEntity="kurtfunai\WalkthroughBundle\Entity\User", mappedBy="group")
      * @var members[]
      */
     protected $members;
 
+    // Initiate Doctrine Collection
     public function __construct()
     {
         $this->members = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Override toString() method to return the name of the group
+     * @return string name
+     */
+    public function __toString()
+    {
+        return $this->name;
     }
 
     public function setId($id)

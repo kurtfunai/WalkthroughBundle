@@ -13,7 +13,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Entity
  * @ORM\Table(name="Users")
  */
-class Users {
+class User {
 
     /**
      * @ORM\Id
@@ -38,11 +38,21 @@ class Users {
     protected $middleName;
 
     /**
-    * @ORM\ManyToOne(targetEntity="Your\SiteBundle\Entity\Group", inversedBy="members")
+    * @ORM\ManyToOne(targetEntity="kurtfunai\WalkthroughBundle\Entity\Group", inversedBy="members")
     * @ORM\JoinColumn(name="fk_group_id", referencedColumnName="id")
     */
     protected $group;
 
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
 
     public function setFirstName($firstName)
     {
@@ -52,5 +62,35 @@ class Users {
     public function getFirstName()
     {
         return $this->firstName;
+    }
+
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
+
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+
+    public function setMiddleName($middleName)
+    {
+        $this->middleName = $middleName;
+    }
+
+    public function getMiddleName()
+    {
+        return $this->middleName;
+    }
+
+    public function setGroup($group)
+    {
+        $this->group = $group;
+    }
+
+    public function getGroup()
+    {
+        return $this->group;
     }
 }

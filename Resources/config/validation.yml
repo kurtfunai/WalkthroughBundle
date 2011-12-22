@@ -1,0 +1,12 @@
+kurtfunai\WalkthroughBundle\Entity\User:
+  properties:
+        firstName:
+                    - MaxLength: {limit:250, message: "First name must be less than 250 characters."}
+                    - NotBlank: {message: "Please enter a first name."}
+        lastName:
+                    - MaxLength: {limit:250, message: "Last name must be less than 250 characters."}
+                    - NotBlank: {message: "Please enter a last name."}
+        middleName:
+                    - MaxLength: {limit:250, message: "Middle name must be less than 250 characters."}
+        group:
+                    - NotBlank: {message: "Please select a group."}

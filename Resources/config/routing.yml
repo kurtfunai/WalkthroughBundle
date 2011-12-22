@@ -5,3 +5,7 @@ homepage:
 walkthrough_entities_and_forms:
     pattern:  /entities-and-forms
     defaults: { _controller: kurtfunaiWalkthroughBundle:Walkthrough:index }
+
+walkthrough_add_user:
+    pattern:  /user/add
+    defaults: { _controller: kurtfunaiWalkthroughBundle:User:add }

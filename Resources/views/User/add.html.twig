@@ -1,0 +1,46 @@
+{% extends 'kurtfunaiWalkthroughBundle::layout.html.twig' %}
+
+{% block title %}
+Add User: Entities and Forms Tutorial - {{ parent() }}
+{% endblock %}
+
+
+{% block content_header %}
+<h1>Add User - Entities &amp; Forms Walkthrough</h1>
+{% endblock %}
+
+{% block content %}
+<form action="{{ path('walkthrough_add_user') }}" method="post" {{ form_enctype(form) }} class="AddUserForm">
+    {{ form_errors(form.firstName) }}
+    {{ form_errors(form.lastName) }}
+    {{ form_errors(form.middleName) }}
+    {{ form_errors(form.group) }}
+    {{ form_errors(form) }}
+
+    {{ form_label(form.firstName, '*First Name:') }}
+    {{ form_widget(form.firstName) }}
+
+    {{ form_label(form.lastName, '*Last Name:') }}
+    {{ form_widget(form.lastName) }}
+
+    {{ form_label(form.middleName, 'Mid. Name:') }}
+    {{ form_widget(form.middleName) }}
+
+    {{ form_label(form.group, '*Group:') }}
+    {{ form_widget(form.group, { 'attr': {'class': 'select_group'}, 'empty_value': '-- Add to Group --' }) }}
+
+    {{ form_rest(form) }}
+    <div class="clear"></div>
+
+    <input type="submit" value="Add User!"/>
+</form>
+
+{% endblock %}
+
+{% block footer %}
+<ul>
+    <li>
+        <a href="{{path('walkthrough_entities_and_forms')}}">Back to walkthrough</a>
+    </li>
+</ul>
+{% endblock %}

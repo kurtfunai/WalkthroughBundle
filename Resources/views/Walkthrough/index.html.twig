@@ -10,7 +10,11 @@ Symfony2: Entities and Forms Tutorial - {{ parent() }}
 {% endblock %}
 
 {% block content %}
-rawr
+<ul>
+    <li>
+        <a href="{{path('walkthrough_add_user')}}">Add User</a>
+    </li>
+</ul>
 {% endblock %}
 
 {% block footer %}
