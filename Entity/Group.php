@@ -42,12 +42,12 @@ class Group {
     }
 
     /**
-     * Override toString() method to return the name of the group
-     * @return string name
+     * Override __toString() method to return the name of the group
+     * @return mixed
      */
     public function __toString()
     {
-        return $this->name;
+       return $this->name;
     }
 
     public function setId($id)

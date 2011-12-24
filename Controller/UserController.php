@@ -13,8 +13,8 @@ use kurtfunai\WalkthroughBundle\Form as Form;
 class UserController extends Controller
 {
     /**
-     * By default, displays form to add user to the system.
-     * If form has been posted, validates and adds user to database
+     * By default, displays form to add a User.
+     * If form has been posted, validates and adds User to database.
      * @return \Symfony\Bundle\FrameworkBundle\Controller\Response
      */
     public function addAction()
@@ -38,7 +38,7 @@ class UserController extends Controller
 
         return $this->render('kurtfunaiWalkthroughBundle:User:add.html.twig',
             array(
-            'form' => $form->createView()
+                'form' => $form->createView()
             ));
     }
 }
