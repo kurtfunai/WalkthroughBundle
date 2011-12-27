@@ -29,6 +29,7 @@ class UserController extends Controller
             if ($form->isValid())
             {
                 $em = $this->get('doctrine')->getEntityManager();
+                $user->setDateAdded(new \DateTime());
                 $em->persist($user);
                 $em->flush();
                 $this->get('session')->setFlash('notice', 'You have successfully added '.$user->getFirstName().' '.$user->getLastName().' to the database!');

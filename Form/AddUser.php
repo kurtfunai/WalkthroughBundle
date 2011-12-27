@@ -26,7 +26,7 @@ class AddUser extends AbstractType
     }
 
     /**
-     * Returns the default options for this type.
+     * Returns the default options for this form type.
      * @param array $options
      * @return array The default options
      */

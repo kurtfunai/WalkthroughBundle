@@ -9,6 +9,7 @@ CREATE TABLE  `Users` (
 	`last_name` varchar(255) NOT NULL,
 	`first_name` varchar(255) NOT NULL,
 	`middle_name` varchar(255) DEFAULT NULL,
+	`date_added` DATETIME,
 	`fk_group_id` int NOT NULL,
 	PRIMARY KEY (`id`),
 	FOREIGN KEY (`fk_group_id`) references Groups(`id`)

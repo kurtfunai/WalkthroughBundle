@@ -185,8 +185,7 @@ input[type="submit"]:hover  {
 .flash-message
 {
     padding: 10px;
-    margin: 5px;
-    margin-top: 15px;
+    margin: 15px 5px 15px 0;
     background-color: #ffe;
 }
 

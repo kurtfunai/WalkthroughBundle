@@ -38,6 +38,11 @@ class User {
     protected $middleName;
 
     /**
+     * @ORM\Column(name="date_added", type="datetime")
+     */
+    protected $dateAdded;
+
+    /**
     * @ORM\ManyToOne(targetEntity="kurtfunai\WalkthroughBundle\Entity\Group", inversedBy="members")
     * @ORM\JoinColumn(name="fk_group_id", referencedColumnName="id")
     */
@@ -82,6 +87,16 @@ class User {
     public function getMiddleName()
     {
         return $this->middleName;
+    }
+
+    public function setDateAdded($dateAdded)
+    {
+        $this->dateAdded = $dateAdded;
+    }
+
+    public function getDateAdded()
+    {
+        return $this->dateAdded;
     }
 
     public function setGroup($group)
