@@ -4,16 +4,16 @@ If you're downloading this bundle, don't forget to:
 
 ### Register the bundle in [app/AppKernel.php]
 
-new kurtfunai\WalkthroughBundle\kurtfunaiWalkthroughBundle(),
+	new kurtfunai\WalkthroughBundle\kurtfunaiWalkthroughBundle(),
 
 --------------------------------
 
 
 ###Add the custom routing information to [app/config/routing.yml]
 
-kurtfunaiWalkthroughBundle:
-    resource: "@kurtfunaiWalkthroughBundle/Resources/config/routing.yml"
-    prefix:   /
+	kurtfunaiWalkthroughBundle:
+    	resource: "@kurtfunaiWalkthroughBundle/Resources/config/routing.yml"
+    	prefix:   /
 
 --------------------------------
 
