@@ -29,7 +29,6 @@ class Group {
 
     /**
      * @ORM\OneToMany(targetEntity="kurtfunai\WalkthroughBundle\Entity\User", mappedBy="group")
-     * @var members[]
      */
     protected $members;
 

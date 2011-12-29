@@ -20,9 +20,9 @@ INSERT INTO `Groups` (`id`, `name`) VALUES(1, 'Symfony Pros');
 INSERT INTO `Groups` (`id`, `name`) VALUES(2, 'Doctrine Dumps');
 INSERT INTO `Groups` (`id`, `name`) VALUES(3, 'Teachers Extraordinaire');
 
-INSERT INTO `Users` (`id`, `last_name`, `first_name`, `middle_name`, `fk_group_id`) VALUES(1, 'Here', 'Your', 'Name', 1);
-INSERT INTO `Users` (`id`, `last_name`, `first_name`, `fk_group_id`) VALUES(2, 'Potencier', 'Fabien', 1);
-INSERT INTO `Users` (`id`, `last_name`, `first_name`, `fk_group_id`) VALUES(3, 'Funai', 'Kurt',  3);
-INSERT INTO `Users` (`id`, `last_name`, `first_name`, `fk_group_id`) VALUES(4, 'Ewing', 'Court',  3);
-INSERT INTO `Users` (`id`, `last_name`, `first_name`, `middle_name`, `fk_group_id`) VALUES(5, 'You', 'The', 'Old', 2); 
+INSERT INTO `Users` (`id`, `last_name`, `first_name`, `middle_name`, `date_added`, `fk_group_id`) VALUES(1, 'Here', 'Your', 'Name', NOW(), 1);
+INSERT INTO `Users` (`id`, `last_name`, `first_name`, `date_added`, `fk_group_id`) VALUES(2, 'Potencier', 'Fabien', NOW(), 1);
+INSERT INTO `Users` (`id`, `last_name`, `first_name`, `date_added`, `fk_group_id`) VALUES(3, 'Funai', 'Kurt', NOW(), 3);
+INSERT INTO `Users` (`id`, `last_name`, `first_name`, `date_added`, `fk_group_id`) VALUES(4, 'Ewing', 'Court', NOW(), 3);
+INSERT INTO `Users` (`id`, `last_name`, `first_name`, `middle_name`, `date_added`, `fk_group_id`) VALUES(5, 'You', 'The', 'Old', NOW(), 2); 
 
